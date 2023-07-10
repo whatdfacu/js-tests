@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+
+.main-container {
+    margin-top: 10vh;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.flex-container {
+    border-radius: 9%;
+  display: flex;
+  background-color: DodgerBlue;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.flex-container > div {
+  margin: 40px;
+}
+
+.pic {
+    border-radius: 9%;
+    max-height: 100%;
+    max-width: 100%;
+}
