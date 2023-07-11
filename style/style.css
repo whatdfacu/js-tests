@@ -8,8 +8,16 @@ body {
     margin-right: 30%;
 }
 
+@media screen and (max-width: 500px) {
+  .main-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+
 .flex-container {
-    border-radius: 9%;
+  border-radius: 10%;
   display: flex;
   background-color: DodgerBlue;
   flex-direction: column; 
@@ -18,7 +26,7 @@ body {
 }
 
 .flex-container > div {
-  margin: 40px;
+  margin: 10%;
 }
 
 .pic {
@@ -26,3 +34,4 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
+
