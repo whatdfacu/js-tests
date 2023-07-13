@@ -4,27 +4,36 @@ const pic3 = document.getElementById("pic-3");
 var foto = 2;
 var button = document.getElementById("button");
 var newFlex = document.getElementById("new-flex");
-var newFlexContent = "<div><p>hi, the loop is: </p></div>";
+var newFlexContent1 = "<div><h2>Photo number ";
+var nFc2 = "</h2></div>";
 var backroundFlex = document.getElementById("body");
 
 function alternatePic(pic) {
   if (foto < 6) {
     pic.innerHTML =
-      '<img class="pic" src="img/FOTO' + foto + '.jpg" alt="pic1">';
-    foto = foto + 1;
+      '<img class="pic" src="img/FOTO'+foto+'.jpg" alt="pic1">';
+    foto=foto+1;
   } else {
     pic.innerHTML = '<img class="pic" src="img/FOTO1.jpg" alt="pic1">';
     foto = 2;
   }
 }
 
+var butoni = 0;
+
 function newFlexGo() {
-  var lupin = 1;
-  while (lupin <= 5) {
-    console.log(lupin);
-    newFlex.innerHTML=newFlex.innerHTML+newFlexContent+lupin+'<img class="pic" src="img/FOTO'+lupin+'.jpg" alt="pic1">';
-    lupin = lupin + 1;
-  }
+    var lupin = 1;
+    if (butoni % 2 === 0){
+        while (lupin <= 5) {
+            button.innerHTML="Hide photos"
+            console.log(lupin);
+          newFlex.innerHTML=newFlex.innerHTML+newFlexContent1+lupin+nFc2+'<div id="new-pic-'+lupin+'"><img class="pic" src="img/FOTO'+lupin+'.jpg" alt="pic1"></div>';
+          lupin=lupin+1;
+        }
+    }
+else {newFlex.innerHTML='';button.innerHTML="Show all photos"}
+butoni=butoni+1;
+console.log("hiciste click en butoni " + butoni + " veces");
 }
 
 pic1.onclick = function () {
