@@ -10,38 +10,33 @@ function alternatePic(pic) {
   if (foto < 6) {
     pic.innerHTML =
       '<img class="pic" src="img/FOTO' + foto + '.jpg" alt="pic1">';
-    foto = foto + 1;
+      console.log('Photo Number ' + foto);
+      foto ++;
   } else {
     pic.innerHTML = '<img class="pic" src="img/FOTO1.jpg" alt="pic1">';
+    console.log('Photo Number 1');
     foto = 2;
   }
 }
 
 var butoni = 0;
 
-function newFlexGo() {
-  var lupin = 1;
-  if (butoni % 2 === 0) {
-    while (lupin <= 5) {
+function newFlexGo() 
+{
+  if (butoni % 2 === 0)
+  {
+    for (i=1; i <= 5 ; i++) 
+    {
       button.innerHTML = "Hide photos";
-      console.log(lupin);
-      newFlex.innerHTML =
-        newFlex.innerHTML +
-        newFlexContent1 +
-        lupin +
-        nFc2 +
-        '<div id="new-pic-' +
-        lupin +
-        '"><img class="pic" src="img/FOTO' +
-        lupin +
-        '.jpg" alt="pic1"></div>';
-      lupin = lupin + 1;
+      console.log(i);
+      newFlex.innerHTML = newFlex.innerHTML + newFlexContent1 + i + nFc2 + '<div id="new-pic-' + i + '"><img class="pic" src="img/FOTO' + i + '.jpg" alt="pic1"></div>';
     }
-  } else {
+  } else 
+  {
     newFlex.innerHTML = "";
     button.innerHTML = "Show all photos";
   }
-  butoni = butoni + 1;
+  butoni++;
   console.log("hiciste click en butoni " + butoni + " veces");
 }
 
@@ -51,6 +46,6 @@ pic1.onclick = function () {
 
 button.onclick = function () {
   newFlexGo();
-  newFlex.style.color = "blue";
-  this.style.color = "red";
+/*   newFlex.style.color = "blue";
+ */  this.style.color = "blue";
 };
