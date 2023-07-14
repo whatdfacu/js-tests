@@ -49,3 +49,14 @@ button.onclick = function () {
 /*   newFlex.style.color = "blue";
  */  this.style.color = "blue";
 };
+
+var tit = document.getElementById("doc-tit");
+var mod = document.getElementById("doc-mod");
+var wid = document.getElementById("win-wid");
+var loc = document.getElementById("win-loc");
+
+
+tit.onclick = function(){ console.log(document.title); alert(document.title)}
+mod.onclick = function(){ console.log(document.lastModified); alert(document.lastModified)}
+wid.onclick = function(){ console.log(window.screen.width); alert(window.screen.width)}
+loc.onclick = function(){ console.log(window.location); alert(window.location)}
