@@ -42,8 +42,8 @@ function newFlexGo()
 }
 
 pic1.onclick = function () {
-/*   sign.style.visibility="hidden"
- */  sign.style.display="none"
+  sign.style.visibility="hidden"
+  /* sign.style.display="none"*/ 
   alternatePic(pic1);
 
 };
