@@ -5,6 +5,7 @@ var newFlex = document.getElementById("new-flex");
 var newFlexContent1 = "<div><h2>Photo number ";
 var nFc2 = "</h2></div>";
 var backroundFlex = document.getElementById("body");
+var sign = document.getElementById("sign");
 
 function alternatePic(pic) {
   if (foto < 6) {
@@ -41,20 +42,21 @@ function newFlexGo()
 }
 
 pic1.onclick = function () {
+/*   sign.style.visibility="hidden"
+ */  sign.style.display="none"
   alternatePic(pic1);
+
 };
 
 button.onclick = function () {
   newFlexGo();
-/*   newFlex.style.color = "blue";
- */  this.style.color = "blue";
+  this.style.color = "blue";
 };
 
 var tit = document.getElementById("doc-tit");
 var mod = document.getElementById("doc-mod");
 var wid = document.getElementById("win-wid");
 var loc = document.getElementById("win-loc");
-
 
 tit.onclick = function(){ console.log(document.title); alert(document.title)}
 mod.onclick = function(){ console.log(document.lastModified); alert(document.lastModified)}
