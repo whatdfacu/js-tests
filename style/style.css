@@ -23,10 +23,22 @@ body {
   flex-direction: column; 
   justify-content: center; 
   align-items: center;
+  margin-bottom: 20%;
+}
+
+#new-flex div {
+  margin: 0 10%;
+  padding: 0;
+}
+
+#new-flex div img{
+  margin-bottom: 10%;
+
 }
 
 .flex-container > div {
   margin: 10%;
+  
 }
 
 .pic {
