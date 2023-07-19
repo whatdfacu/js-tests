@@ -81,7 +81,7 @@ h1 {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  height: 4vh;
+  height: 48px;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -97,7 +97,7 @@ h1 {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 2vw;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
