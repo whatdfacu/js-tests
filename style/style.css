@@ -49,12 +49,12 @@ body {
 }
 
 h2{
-  font-family: sans-serif;
+  font-family: "JetBrains Mono",monospace;
 }
 h1 {
   padding-top: 0;
   margin-top: 0;
-  font-family: sans-serif;
+  font-family: "JetBrains Mono",monospace;
   font-size: 1,5em;
   color: white;
   position: relative;
@@ -69,7 +69,7 @@ h1 {
   right: -60px;
 }
 
-.button {
+/* .button {
   background-color: #02233F;
   border: none;
   color: white;
@@ -78,13 +78,56 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 15px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   border-radius: 10px;
 }
 
 .button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.527),0 17px 50px 0 rgba(0, 0, 0, 0.544);
+}
+ */
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #02233F 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #111742 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #181f57 0 3px 7px inset;
+  transform: translateY(2px);
 }
