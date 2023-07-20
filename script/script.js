@@ -13,14 +13,14 @@ var newFlexContent = [
 
 var foto = 2;
 function alternatePic(pic) {
-  if (foto < 6) {
+  if (foto <= 7) {
     pic.innerHTML =
       '<img class="pic" src="img/FOTO' + foto + '.jpg" alt="pic1">';
       console.log('Photo Number ' + foto);
       foto ++;
   } else {
-    pic.innerHTML = '<img class="pic" src="img/FOTO1.jpg" alt="pic1">';
-    console.log('Photo Number 1');
+    pic.innerHTML = '<img class="pic" src="img/FOTO1.gif" alt="pic1">';
+    console.log('Photo Number ' + foto);
     foto = 2;
   }
 }
@@ -28,9 +28,14 @@ function alternatePic(pic) {
 var butoni = 0;
 function newFlexGo(){
   if (butoni % 2 === 0){
-    for (i=1; i <= 5 ; i++){
+    for (i=1; i <= 7 ; i++){
+      if (i === 1) {
+        newFlex.innerHTML = '<div id="new-pic-' + i + '"><img class="pic" src="img/FOTO' + i + '.gif" alt="pic1"></div>';        
+      } else{
+
+      
       button.innerHTML = "Hide photos";
-      newFlex.innerHTML = newFlex.innerHTML + nFc1 + i + nFc2 + '<div id="new-pic-' + i + '"><img class="pic" src="img/FOTO' + i + '.jpg" alt="pic1"></div>';
+      newFlex.innerHTML = newFlex.innerHTML + nFc1 + i + nFc2 + '<div id="new-pic-' + i + '"><img class="pic" src="img/FOTO' + i + '.jpg" alt="pic1"></div>';}
     }
   } else 
   {
