@@ -37,21 +37,20 @@ h2{
   font-family: "JetBrains Mono",monospace;
 }
 h1 {
-  padding-top: 0;
+  padding-top: 10%;
   margin-top: 0;
   font-family: "JetBrains Mono",monospace;
-  font-size: 1,5em;
+  font-size: 100%;
   color: white;
-  position: relative;
-  top: 50px;
+  top: 15%;
   z-index: 10;
 }
 
 #arrowhead {  
   position: relative;
   z-index: 10;
-  top: 50px;
-  right: -60px;
+  top: 1.5vh;
+  left: 10%;
 }
 
 .button-29 {
@@ -66,7 +65,8 @@ h1 {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  height: 48px;
+  height: 5vw;
+  width: 15vw;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -82,8 +82,8 @@ h1 {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 1.5vw;
+  margin-bottom: 3px;
 }
 
 .button-29:hover {
@@ -99,10 +99,10 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  padding: 5%;
+  margin: 0,5%;
 }
 
 .grid-item{
-  margin: 2%;
+  margin: 5%;
 }
 
