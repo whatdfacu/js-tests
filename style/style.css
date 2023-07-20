@@ -2,28 +2,14 @@ body {
   background-color: black;
 }
 
-.main-container {
-    margin-top: 0;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-@media screen and (max-width: 500px) {
-  .main-container {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-
 .flex-container {
-  border-radius: 25px;
+  border-radius: 10px;
   display: flex;
-  background-color: DodgerBlue;
+  background-color: rgb(30, 143, 255);
   flex-direction: column; 
   justify-content: center; 
   align-items: center;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 #new-flex div {
@@ -37,12 +23,11 @@ body {
 }
 
 .flex-container > div {
-  margin: 10%;
+  margin: 5%;
   
 }
 
 .pic {
-    border-radius: 9px;
     max-height: 100%;
     max-width: 100%;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -110,3 +95,14 @@ h1 {
   box-shadow: #181f57 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 5%;
+}
+
+.grid-item{
+  margin: 2%;
+}
+

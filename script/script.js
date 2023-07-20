@@ -4,10 +4,6 @@ button = document.getElementById("button"),
 newFlex = document.getElementById("new-flex"),
 backroundFlex = document.getElementById("body"),
 sign = document.getElementById("sign"),
-tit = document.getElementById("doc-tit"),
-mod = document.getElementById("doc-mod"),
-wid = document.getElementById("win-wid"),
-loc = document.getElementById("win-loc")
 ]
 
 var newFlexContent = [
@@ -53,8 +49,3 @@ pic1.onclick = function () {
 button.onclick = function () {
   newFlexGo();
 };
-
-/* tit.onclick = function(){ console.log(document.title); alert(document.title)}
-mod.onclick = function(){ console.log(document.lastModified); alert(document.lastModified)}
-wid.onclick = function(){ console.log(window.screen.width); alert(window.screen.width)}
-loc.onclick = function(){ console.log(window.location); alert(window.location)} */
