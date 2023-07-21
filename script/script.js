@@ -1,6 +1,7 @@
 var domElements = [
 pic1 = document.getElementById("pic-1"),
 button = document.getElementById("button"),
+button2 = document.getElementById("button2"),
 newFlex = document.getElementById("new-flex"),
 backroundFlex = document.getElementById("body"),
 sign = document.getElementById("sign"),
@@ -54,3 +55,23 @@ pic1.onclick = function () {
 button.onclick = function () {
   newFlexGo();
 };
+
+function fuck(){
+  document.write("<h1>fuck everything</h1>")
+  console.log("done")
+}
+
+button2.onclick=function(){addNewTag()}
+
+
+function addNewTag(){
+  var grid1Tag = document.getElementById("grid-item-1");
+  var newTag = document.createElement("button");
+  newTag.setAttribute("class","button-29")
+  newTag.setAttribute("id","button3")
+  newTag.setAttribute("role","button")
+  var inside = document.createTextNode("button");
+  newTag.appendChild(inside);
+  grid1Tag.appendChild(newTag);
+  console.log(newTag);
+}
