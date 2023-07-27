@@ -1,4 +1,5 @@
 body {
+  font-family: "JetBrains Mono",monospace;
   background: black;
 }
 
@@ -44,13 +45,13 @@ body {
 }
 
 h2{
-  font-family: "JetBrains Mono",monospace;
+  
   font-size: 2vw;
 }
 #signText {
   text-align: center;
   margin-bottom: 15%;
-  font-family: "JetBrains Mono",monospace;
+  
   font-size: 2vw;
   color: white;
   top: 15%;
@@ -84,7 +85,7 @@ h2{
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  
   height: 5vw;
   width: 15vw;
   justify-content: center;
@@ -133,4 +134,38 @@ h2{
 
 #grid-item-3{
   margin-top: 50%;
+}
+
+#grid-item-4{
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  margin: auto;
+}
+
+#grid-item-4 p{
+  display: inline;
+  color: white;
+}
+
+input{
+  margin-left: 10px;
+}
+
+#formSubmit input{
+  height: 30px;
+  width: 20%;
+  margin: 0px 40%;
+}
+
+form div{
+  margin: 10px;
+}
+
+form .flex-container {
+  background: none;
+  padding: 15px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
 }

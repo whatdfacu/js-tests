@@ -57,11 +57,13 @@ button.onclick = function () {
 };
 
 function fuck(){
-  document.write("<h1>fuck everything</h1>")
-  console.log("done")
+/*   document.write("<h1>fuck everything</h1>")
+  console.log("done") */
+  return 2+2;
 }
 
-button2.onclick=function(){addNewTag()}
+button2.onclick=function(){console.log(find_max([100,1,2,3,200,25]));}
+
 
 
 function addNewTag(){
@@ -75,3 +77,13 @@ function addNewTag(){
   grid1Tag.appendChild(newTag);
   console.log(newTag);
 }
+
+function find_max(nums) {
+let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+for (let num of nums) {
+if (num > max_num) {
+max_num = num;}
+}
+return max_num;
+}
+
