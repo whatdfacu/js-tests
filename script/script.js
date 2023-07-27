@@ -57,13 +57,14 @@ button.onclick = function () {
 };
 
 function fuck(){
-/*   document.write("<h1>fuck everything</h1>")
-  console.log("done") */
-  return 2+2;
+  document.write("<h1>fuck everything</h1>")
+  console.log("done")
+
 }
 
-button2.onclick=function(){console.log(find_max([100,1,2,3,200,25]));}
+/* button2.onclick=function(){console.log(find_max([100,1,2,3,200,25]));} */
 
+button2.onclick=function(){addNewTag()};
 
 
 function addNewTag(){
@@ -76,6 +77,8 @@ function addNewTag(){
   newTag.appendChild(inside);
   grid1Tag.appendChild(newTag);
   console.log(newTag);
+  button3 = document.getElementById("button3"),
+  button3.onclick=function(){fuck()};
 }
 
 function find_max(nums) {
