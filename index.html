@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>changing photo test</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/arrow.css" />
-  </head>
 
-  <body id="body">
-    <video autoplay muted loop id="myVideoBackground">
-      <source src="img/BeautifulSparseAzurewingedmagpie2.mp4" type="video/mp4">
-    </video>
-        <div class="grid-container">
-          <div class="grid-item">
-            <div class="flex-container" id="grid-item-1"><button id="button2" class="button-29" role="button">I DO NOTHING</button></div>            
-          </div>
-          <div class="grid-item">
-            <div id="sign">
-              <h1 id="signText">Dont forget to click here!</h1>
-              <div class="arrow" id="arrowhead">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <div class="flex-container">
-              <div id="pic-1"><img class="pic" src="img/FOTO1.gif" alt="pic1" /></div>
-              <button id="button" class="button-29" role="button">Show all photos</button>
-            </div>
-            <div id="new-flex" class="flex-container"></div>
-          </div>
-          <div class="grid-item">
-            <div class="flex-container" id="grid-item-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe officia dicta consequuntur molestiae necessitatibus velit mollitia consectetur, maiores rerum? Ipsa odit omnis delectus corrupti, aliquid debitis consequuntur odio iure perspiciatis soluta unde architecto dolores quasi! Maiores reiciendis doloribus ipsam beatae consectetur, iusto rem cumque culpa voluptatum, possimus incidunt. Nostrum asperiores eligendi molestias vel ipsum, eius sed nulla dolore aut nemo dolor quia saepe quod praesentium. Sed earum voluptatem cum eius! Voluptate deleniti impedit ratione ipsam quod, at tempore illum veniam corporis qui dolor nobis, laudantium debitis cum quo voluptates veritatis asperiores perferendis. Quod obcaecati id, molestiae sapiente nemo nulla.</p></div>            
-          </div>
-          <div class="flex-container grid-item" id="grid-item-4">
-            <form method="get" action="http://jstests1.netlify.com">
-              <div class="flex-container"><p>Please insert your name here</p><input type="text" name="firstName" id="formFname"></div>
-              <div class="flex-container"><p>Please insert your last name here</p><input type="text" name="lastName" id="formLname"></div>
-              <div class="flex-container"><p>Please insert your Age</p><input type="text" name="age" id="formAge"></div>
-              <div class="flex-container"><input class="button-29" type="submit" id="formSubmit"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>changing photo test</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/arrow.css" />
+</head>
 
-            </form>
-          </div>
+<body id="body">
+  <video autoplay muted loop id="myVideoBackground">
+    <source src="img/BeautifulSparseAzurewingedmagpie2.mp4" type="video/mp4">
+  </video>
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="flex-container" id="grid-item-1"><button id="button2" class="button-29" role="button">I DO
+          NOTHING</button></div>
+    </div>
 
-  </body>
-  <script src="script/script.js"></script>
-  <script src="script/formValidation.js"></script>
+    <div class="grid-item">
+      <div id="sign">
+        <h1 id="signText">Dont forget to click here!</h1>
+        <div class="arrow" id="arrowhead">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div id="pic-1"><img class="pic" src="img/FOTO1.gif" alt="pic1" /></div>
+        <button id="button" class="button-29" role="button">Show all photos</button>
+      </div>
+      <div id="new-flex" class="flex-container"></div>
+    </div>
+    <div class="grid-item">
+      <div class="flex-container" id="grid-item-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe officia dicta consequuntur molestiae
+          necessitatibus velit mollitia consectetur, maiores rerum? Ipsa odit omnis delectus corrupti, aliquid debitis
+          consequuntur odio iure perspiciatis soluta unde architecto dolores quasi! Maiores reiciendis doloribus ipsam
+          beatae consectetur, iusto rem cumque culpa voluptatum, possimus incidunt. Nostrum asperiores eligendi
+          molestias vel ipsum, eius sed nulla dolore aut nemo dolor quia saepe quod praesentium. Sed earum voluptatem
+          cum eius! Voluptate deleniti impedit ratione ipsam quod, at tempore illum veniam corporis qui dolor nobis,
+          laudantium debitis cum quo voluptates veritatis asperiores perferendis. Quod obcaecati id, molestiae sapiente
+          nemo nulla.</p>
+      </div>
+    </div>
+    <div class="flex-container grid-item" id="grid-item-4">
+      <form method="get" action="http://jstests1.netlify.com">
+        <div class="flex-container">
+          <p>Please insert your name here</p><input type="text" name="firstName" id="formFname">
+        </div>
+        <div class="flex-container">
+          <p>Please insert your last name here</p><input type="text" name="lastName" id="formLname">
+        </div>
+        <div class="flex-container">
+          <p>Please insert your Age</p><input type="text" name="age" id="formAge">
+        </div>
+        <div class="flex-container"><input class="button-29" type="submit" id="formSubmit"></div>
+
+      </form>
+    </div>
+    <div class="grid-item">
+      <canvas id="myCanvas"></canvas>
+    </div>
+
+</body>
+<script src="script/script.js"></script>
+<script src="script/formValidation.js"></script>
+<script src="script/canvas.js"></script>
+
 </html>

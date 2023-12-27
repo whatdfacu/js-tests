@@ -169,3 +169,9 @@ form .flex-container {
   justify-content:space-between;
   align-items: center;
 }
+
+canvas {
+  height: 400px;
+  width: 400px;
+  border: solid black;
+}

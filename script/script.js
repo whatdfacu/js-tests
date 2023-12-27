@@ -90,3 +90,9 @@ max_num = num;}
 return max_num;
 }
 
+function sumaDeNumeros(number=5){
+  var result = number + number;
+  alert(number + "+" + number + "=" + result);
+}
+
+sumaDeNumeros(10);
